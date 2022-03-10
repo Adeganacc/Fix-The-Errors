@@ -12,4 +12,4 @@ touch data1 data2 data3 data4 data5
 echo 'author: ' $USER > data*
 
 # Append 'date: ' and the date in MM-DD-YYYY format to each data file
-echo 'date: ' date +$m-$d-$Y >> data*
+echo 'date: ' date +%m-%d-%Y >> data*
