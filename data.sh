@@ -9,7 +9,7 @@ cd new_data
 touch data1 data2 data3 data4 data5
 
 # Output 'author: <username>' to each data file
-echo 'author: ' $USER > data*
+echo 'author: ' $USER | tee data*
 
 # Append 'date: ' and the date in MM-DD-YYYY format to each data file
-echo 'date: ' date +%m-%d-%Y >> data*
+echo 'date: ' date +%m-%d-%Y | tee -a data*
